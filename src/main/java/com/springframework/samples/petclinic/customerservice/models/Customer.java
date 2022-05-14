@@ -1,4 +1,4 @@
-package com.springframework.samples.petclinic.customerservice;
+package com.springframework.samples.petclinic.customerservice.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
