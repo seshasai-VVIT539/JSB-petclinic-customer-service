@@ -41,11 +41,11 @@ public class Pet {
 	@ManyToOne
 	@JoinColumn(name = "owner_id")
 	@JsonIgnore
-	private Customer owner;
+	private Owner owner;
 
 	@Override
 	public String toString() {
-		return "id"+ this.getId()).append("name", this.getName())
+		return new ToStringCreator(this).append("id", this.getId()).append("name", this.getName())
 				.append("birthDate", this.getBirthDate()).append("type", this.getType().getName())
 				.append("ownerFirstname", this.getOwner().getFirstName())
 				.append("ownerLastname", this.getOwner().getLastName()).toString();
