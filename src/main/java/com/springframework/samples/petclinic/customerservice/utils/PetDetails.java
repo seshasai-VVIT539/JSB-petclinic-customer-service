@@ -4,6 +4,7 @@ import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.springframework.samples.petclinic.customerservice.models.Pet;
 import com.springframework.samples.petclinic.customerservice.models.PetType;
 
@@ -18,7 +19,7 @@ public class PetDetails {
 
 	private String owner;
 
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date birthDate;
 
 	private PetType type;

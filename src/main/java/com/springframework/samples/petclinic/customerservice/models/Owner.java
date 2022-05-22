@@ -27,38 +27,38 @@ import lombok.Setter;
 @Table(name = "owners")
 public class Owner {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue
 	@Getter
 	private Integer id;
 
 	@Column(name = "first_name")
 	@Getter
 	@Setter
-	@NotBlank
+	@NotBlank(message = "firstName should not be blank")
 	private String firstName;
 
 	@Column(name = "last_name")
 	@Getter
 	@Setter
-	@NotBlank
+	@NotBlank(message = "lastName should not be blank")
 	private String lastName;
 
 	@Column(name = "address")
 	@Getter
 	@Setter
-	@NotBlank
+	@NotBlank(message = "address should not be blank")
 	private String address;
 
 	@Getter
 	@Setter
 	@Column(name = "city")
-	@NotBlank
+	@NotBlank(message = "city should not be blank")
 	private String city;
 
 	@Getter
 	@Setter
 	@Column(name = "telephone")
-	@NotBlank
+	@NotBlank(message = "telephone should not be blank")
 	@Digits(fraction = 0, integer = 12)
 	private String telephone;
 

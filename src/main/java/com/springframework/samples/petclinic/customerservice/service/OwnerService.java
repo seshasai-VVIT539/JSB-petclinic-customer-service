@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.springframework.samples.petclinic.customerservice.controller.ResourceNotFoundException;
+import com.springframework.samples.petclinic.customerservice.exception.ResourceNotFoundException;
 import com.springframework.samples.petclinic.customerservice.models.Owner;
 import com.springframework.samples.petclinic.customerservice.repo.OwnerRepo;
 

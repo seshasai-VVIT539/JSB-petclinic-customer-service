@@ -10,7 +10,7 @@ import lombok.Data;
 
 @Data
 public class PetRequest {
-	private int ID;
+	private int id;
 
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date birthDate;

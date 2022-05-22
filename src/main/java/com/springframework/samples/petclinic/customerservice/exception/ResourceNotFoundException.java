@@ -1,5 +1,8 @@
-package com.springframework.samples.petclinic.customerservice.controller;
+package com.springframework.samples.petclinic.customerservice.exception;
 
+import lombok.Getter;
+
+@Getter
 public class ResourceNotFoundException extends RuntimeException {
 	public ResourceNotFoundException() {
 		super();
