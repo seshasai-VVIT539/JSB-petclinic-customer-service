@@ -2,8 +2,8 @@ package com.springframework.samples.petclinic.customerservice.models;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -11,6 +11,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -19,7 +20,6 @@ import javax.validation.constraints.NotBlank;
 
 import org.springframework.core.style.ToStringCreator;
 
-import antlr.collections.List;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,7 +27,7 @@ import lombok.Setter;
 @Table(name = "owners")
 public class Owner {
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Getter
 	private Integer id;
 
