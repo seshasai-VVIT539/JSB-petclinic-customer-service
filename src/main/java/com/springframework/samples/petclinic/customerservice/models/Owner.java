@@ -24,7 +24,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "customers")
+@Table(name = "owners")
 public class Owner {
 	@Id
 	@GeneratedValue
