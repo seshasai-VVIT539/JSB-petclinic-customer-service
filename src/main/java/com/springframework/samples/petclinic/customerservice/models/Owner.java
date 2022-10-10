@@ -27,7 +27,7 @@ import lombok.Setter;
 @Table(name = "owners")
 public class Owner {
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Getter
 	private Integer id;
 
